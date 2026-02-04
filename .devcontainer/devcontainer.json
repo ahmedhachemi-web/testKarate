@@ -35,5 +35,5 @@
         }
     },
     "onCreateCommand": "sdk install java 17.0.10-ms || echo 'Déjà installé'",
-    "postCreateCommand": "cd karate-tests && mvn clean test -Dkarate.options='classpath:api-local.feature' -DforkCount=0 && mvn install -DskipTests && mvn clean compile" 
+    "postCreateCommand": "cd karate-tests && chmod +x run-feature.sh && mvn clean test -Dkarate.options='classpath:api-local.feature' -DforkCount=0 && mvn install -DskipTests && mvn clean compile" 
 }
