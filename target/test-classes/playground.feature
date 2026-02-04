@@ -1,9 +1,12 @@
-Feature: ceci est un test
+Feature: Récupérer les animaux disponibles dans le Petstore
+Background:
 
-Scenario: get all store
+* url 'https://petstore.swagger.io/v2'
 
-Given url "https://petstore.swagger.io/v2/store/inventory"
-When method get
+Scenario: Récupérer tous les animaux disponibles
+Given path 'pet/findByStatus'
+And param status = 'available'
+When method GET
 Then status 200
-* print 'ma super response -> ', response ,'<- ma super response'
-And match response == "#present"
+And match response == '#present'
+And match response == '#[_ > 0]'
