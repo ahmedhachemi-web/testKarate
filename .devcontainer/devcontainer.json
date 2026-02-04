@@ -13,7 +13,7 @@
             "esbenp.prettier-vscode",
             "george-alisson.html-preview-vscode",
             "ritwickdey.liveserver",
-            "tomoki1207.pdf"
+            "mathematic.vscode-pdf"
             ],
             "settings": {
                 "files.associations": {
