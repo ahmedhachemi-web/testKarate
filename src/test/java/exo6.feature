@@ -5,7 +5,7 @@ Background:
   
 
 # ---------------------------------------------------------
-# EXO 1 : Créer un animal (POST)
+# EXO 1 : Créer un animal 
 # ---------------------------------------------------------
 Scenario: Création d'un nouveau chien
   Given path "pet"
@@ -13,20 +13,16 @@ Scenario: Création d'un nouveau chien
   # TODO: Ajouter le mot-clé pour envoyer un corps de requête
   # Note : Utilisez ce JSON -> { "id": 2026, "name": "Lucky", "status": "available" }
   
-  # TODO: Indiquer la méthode HTTP pour la création
-  
   # TODO: Vérifier que le code statut est celui d'un succès (200)
   
   # TODO: (Bonus) Vérifier que le nom dans la réponse est bien "Lucky"
 
 
 # ---------------------------------------------------------
-# EXO 2 : Récupérer l'animal (GET)
+# EXO 2 : Récupérer l'animal 
 # ---------------------------------------------------------
 Scenario: Vérifier que l'animal existe bien
   # TODO: Compléter le chemin pour cibler l'animal avec l'ID 2026
-  
-  # TODO: Indiquer la méthode HTTP (GET)
   
   # TODO: Vérifier le statut 200
   
@@ -34,7 +30,7 @@ Scenario: Vérifier que l'animal existe bien
 
 
 # ---------------------------------------------------------
-# EXO 3 : Modifier le statut (PUT)
+# EXO 3 : Modifier le statut
 # ---------------------------------------------------------
 Scenario: Mettre à jour le statut de Lucky en 'sold'
   Given path "pet"
@@ -50,13 +46,11 @@ Scenario: Mettre à jour le statut de Lucky en 'sold'
 
 
 # ---------------------------------------------------------
-# EXO 4 : Supprimer l'animal (DELETE)
+# EXO 4 : Supprimer l'animal
 # ---------------------------------------------------------
 Scenario: Supprimer l'animal pour nettoyer les données
   # TODO: Construire le chemin vers /pet/2026
-  
-  # TODO: Utiliser la méthode DELETE
-  
+
   # TODO: Vérifier le statut 200
   
   # TODO: Vérifier que le message de réponse contient l'ID supprimé ("2026")
