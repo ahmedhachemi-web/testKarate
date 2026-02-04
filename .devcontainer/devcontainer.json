@@ -12,7 +12,8 @@
             "ayushmels.jsoncrackvscode",
             "esbenp.prettier-vscode",
             "george-alisson.html-preview-vscode",
-            "ritwickdey.liveserver"
+            "ritwickdey.liveserver",
+            "tomoki1207.pdf"
             ],
             "settings": {
                 "files.associations": {
